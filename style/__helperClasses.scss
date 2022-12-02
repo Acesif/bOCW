@@ -1,0 +1,11 @@
+.tmpImg{
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+li:hover{
+    transform: scale(1.2);
+    transition: all 0.05s ease-in-out;
+    font-weight: bolder;
+    cursor: pointer;
+    }

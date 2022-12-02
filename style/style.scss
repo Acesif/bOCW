@@ -1,0 +1,103 @@
+@import "__globals.scss";
+@import "__variables.scss";
+@import "__helperClasses.scss";
+
+.container{
+    display: grid;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    width: 100%;
+    height: $height;
+    header{
+        background-color: $shaded-blue;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        position:sticky;
+        top: 0;
+        .logo{
+            margin-left: auto;
+            margin-right: auto;
+            height: 6.25rem;
+            width: 9.375rem;
+            background-image: url(../images/rsz_1logo-removebg-preview.png);
+        }
+        nav{
+            border: .0625rem solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style:none;
+        }
+    }
+    article{
+        background-color: $shaded-blue;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        #top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.875rem;
+            background-color: $off-white;
+            background-image: url(../images/5514.jpg);
+            #search-bar{
+                width: 40rem;
+                height: 2.5rem;
+                border-radius: 1.5rem;
+                padding: 1rem 3rem;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #search-submit{
+                height: 2.5rem;
+                border-radius: 1.5rem;
+                padding: 0rem 2rem 0rem 2rem;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        #bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: $p-top;
+            padding-bottom: $p-top;
+            p{
+                font-size: 2.5rem;
+                font-weight: bold;
+                display: inline-block;
+            }
+            .courses{
+                width: 100%;
+                gap: 50px;
+                padding-top: $p-top;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .featured{
+                    width: 25.25rem;
+                    height: 25.25rem;
+                    background-color: rgb(189, 188, 188);
+                    border-radius: 2.875rem;
+                }
+            }
+        }
+    }
+    footer{  
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(176, 189, 207);
+        justify-content: center;
+        p{
+            padding-top: 1.25rem;
+            text-align: center;
+        }
+        .links{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            >*{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

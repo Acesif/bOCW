@@ -1,0 +1,121 @@
+*, *::after, *::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tmpImg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: all 0.05s ease-in-out;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  width: 100%;
+  height: 1720px;
+}
+.container header {
+  background-color: rgb(177, 205, 222);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.container header .logo {
+  margin-left: auto;
+  margin-right: auto;
+  height: 6.25rem;
+  width: 9.375rem;
+  background-image: url(../images/rsz_1logo-removebg-preview.png);
+}
+.container header nav {
+  border: 0.0625rem solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.container article {
+  background-color: rgb(177, 205, 222);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.container article #top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+  background-color: #EAF3FA;
+  background-image: url(../images/5514.jpg);
+}
+.container article #top #search-bar {
+  width: 40rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container article #top #search-submit {
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  padding: 0rem 2rem 0rem 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container article #bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+.container article #bottom p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.container article #bottom .courses {
+  width: 100%;
+  gap: 50px;
+  padding-top: 4.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container article #bottom .courses .featured {
+  width: 25.25rem;
+  height: 25.25rem;
+  background-color: rgb(189, 188, 188);
+  border-radius: 2.875rem;
+}
+.container footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(176, 189, 207);
+  justify-content: center;
+}
+.container footer p {
+  padding-top: 1.25rem;
+  text-align: center;
+}
+.container footer .links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.container footer .links > * {
+  font-size: 1.25rem;
+}/*# sourceMappingURL=style.css.map */
